@@ -1,0 +1,307 @@
+
+@font-face {
+	font-family: 'Gotham';
+	  src: url('fonts/gotham-bold-webfont.woff2') format('woff2');
+  }
+  
+  @font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Regular.woff') format('woff');
+  }
+  
+  .roboto-regular {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	}
+  
+	html,
+	body{
+	font-family: 'Roboto';
+	margin: 0;
+	padding: 0;
+	}
+	
+	body{
+	box-sizing: border-box;
+	padding: 2%;
+	}
+	
+	body::after{
+	content:url("https://www.enablemusic.group/images/EMG - Logo (Black)@10x.png");
+	height:0; 
+	overflow:hidden;
+	position:absolute; 
+	width:0; 
+	z-index:-1;
+	}
+	
+	a, a:visited{
+	color: black;
+	}
+	
+	a:hover{
+	color: #696969;
+	}
+	
+	a:focus, a:active{
+	color: black;
+	}
+	
+	button,
+	input,
+	optgroup,
+	select,
+	textarea{
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1;
+	margin: 0;
+	}
+	
+	button{
+	background: none;
+	border: none;
+	}
+	
+	button:focus{
+	text-decoration-color: #696969;
+	}
+	
+	header{
+	position: absolute;
+	display: block;
+	bottom: 50;
+	width: 96%;
+	z-index: 11;
+	}
+	
+	header img{
+	width: 100%;
+	}
+	
+	header img:hover{
+	cursor: zoom-in;
+	}
+	
+	header .partners{
+	display: none;
+	margin-bottom: 30px;
+	text-align: center;
+	}
+	
+	header .partners a{
+	display: inline-block;
+	}
+	
+	header .partners img{
+	padding: 10px;
+	width: 90%;
+	}
+	
+	header .partners img:hover{
+	cursor: pointer;
+	}
+	section.section-content.media div p{
+	align-items: center;
+	display: flex;
+	}
+	
+	section.section-content.media div p{
+	margin: 0;
+	}
+	
+	nav{
+	display: flex;
+	width: 100%;
+	display: block;
+	unicode-bidi: isolate;
+	}
+	
+	nav ul{
+	font-family: 'Gotham';
+	align-items: center;
+	display: block;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	color: black;
+	}
+	
+	nav ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	}
+	
+	nav ul li:last-child{
+	font-size: 10px;
+	text-align: right;
+	width: inherit;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: initial;
+	color: black;
+	}
+	
+	nav ul li:nth-last-child(2) button{
+	padding-bottom: 5px;
+	}
+	
+	nav ul li button{
+	font-size: 5vw;
+	padding: 0;
+	text-transform: lowercase;
+	color: black;
+	}
+	
+	nav ul li button:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	}
+	
+	nav ul li button:focus{
+	outline: 0;
+	}
+	
+	nav ul li button.-selected{
+	text-decoration: underline;
+	}
+	
+	section.section-container{
+	display: flex;
+	position: relative;
+	max-height: 50%;
+	}
+	
+	section.section-content{
+	font-family: 'Roboto';
+	font-size: 18px;
+	left: 0;
+	margin-top: 0px;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	}
+	
+	section.section-content.about div p{
+	font-weight: normal;
+	margin: 0;
+	}
+	
+	section.section-content.about p span{
+	font-family: 'Gotham';
+	font-weight: bold;
+	margin: 0;
+	}
+	
+	section.section-content.artists div p{
+	align-items: center;
+	display: flex;
+	}
+	
+	section.section-content.artists div p{
+	margin: 0;
+	}
+
+	section.section-content.media div p{
+	align-items: center;
+	display: flex;
+	}
+	
+	section.section-content.media div p{
+	margin: 0;
+	}
+	
+	section.section-content div p span{
+	display: inline-block;
+	margin-right: 0px;
+	width: 100%;
+	}
+	
+	section.section-content div p span img{
+	width: 100px;
+	}
+	
+	section.section-content div p a{
+	display: inline-block;
+	}
+	
+	section.section-content img{
+	width: 125px;
+	}
+	
+	.team{
+	width: 100%;
+	margin: 0;
+	}
+	
+	.music{
+	width: 100%;
+	margin: 0;
+	}
+	
+	.screen{
+	background: #ffffff;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+	}
+	
+	footer {
+	bottom: 25; 
+	font-size: 3vw;
+	left: 3%;
+	position: absolute;
+	z-index: 12;
+	}
+	
+	@media only screen and (min-width: 1025px) {
+	nav ul{
+	display: flex;
+	}
+	
+	nav ul li{
+	width: 19%;
+	}
+	
+	nav ul li:last-child{
+	font-size: 1vw;
+	position: relative;
+	text-align: right;
+	width: 5%;
+	}
+	
+	nav ul li button{
+	font-size: 3vw;
+	line-height: 1;
+	}
+	
+	header{
+	bottom: 75;
+	}
+	
+	header .partners img{
+	width: initial;
+	}
+	
+	section.section-content {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	position: relative;
+	width: 19%;
+	overflow: auto;
+	}
+	
+	footer{
+	bottom: 50;
+	font-size: 1.5vw;
+	}
+	}
