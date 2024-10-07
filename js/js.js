@@ -1,39 +1,36 @@
-function navClick(btn)    
-{    
-    {    
-        var btns = document.querySelectorAll('.cta-nav'), a = 0, b = btns.length;
-        var sections = document.querySelectorAll('.section-content'), i = 0, l = sections.length;
-    
-    
-        for (a; a < b; a++) {
-            btns[a].classList.remove("-selected")
-        }
-    
-        btn.classList.add("-selected")
-    
-        for (i; i < l; i++) {
-            if (btn.dataset.cat == sections[i].id){
-                sections[i].style.visibility = 'visible';
-            }else{
-                sections[i].style.visibility = 'hidden';
-            }
-        }
-    }   
-    
+function navClick(btn) {
+    var btns = document.querySelectorAll('.cta-nav'), 
+        sections = document.querySelectorAll('.section-content'), 
+        a = 0, b = btns.length, 
+        i = 0, l = sections.length;
+
+    // Remove selected class from all buttons and reset icon rotation
     for (a; a < b; a++) {
-        btns[a].classList.remove("-selected")
+        btns[a].classList.remove("-selected");
+        var icon = btns[a].querySelector('.rotate-icon');
+        if (icon) {
+            icon.classList.remove("rotated");
+        }
     }
 
-    btn.classList.add("-selected")
+    // Add selected class to the clicked button
+    btn.classList.add("-selected");
 
+    // Rotate the icon inside the clicked button
+    var clickedIcon = btn.querySelector('.rotate-icon');
+    if (clickedIcon) {
+        clickedIcon.classList.toggle("rotated");
+    }
+
+    // Show/hide sections based on data-cat attribute
     for (i; i < l; i++) {
-        if (btn.dataset.cat == sections[i].id){
+        if (btn.dataset.cat == sections[i].id) {
             sections[i].style.visibility = 'visible';
-        }else{
+        } else {
             sections[i].style.visibility = 'hidden';
         }
     }
-}   
+}
 
 function logoClick(logo)    
 {    

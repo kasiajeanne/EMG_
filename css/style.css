@@ -139,12 +139,24 @@
 	text-align: right;
 	width: inherit;
 	position: absolute;
+	vertical-align: top;
 	right: 0;
 	top: 0;
 	width: initial;
 	color: black;
+	transition: background-color 0.3s ease, color 0.3s ease;
 	}
-	
+
+	.cta-nav img.rotate-icon {
+	width: 24px; /* Adjust based on the icon size */
+	margin-left: 10px;
+	transition: transform 0.3s ease;
+	}
+	  
+	.cta-nav img.rotate-icon.rotated {
+	transform: rotate(135deg);
+	}
+
 	nav ul li:nth-last-child(2) button{
 	padding-bottom: 5px;
 	}
@@ -155,7 +167,7 @@
 	text-transform: lowercase;
 	color: black;
 	}
-	
+	  
 	nav ul li button:hover{
 	cursor: pointer;
 	text-decoration: underline;
@@ -168,7 +180,7 @@
 	nav ul li button.-selected{
 	text-decoration: underline;
 	}
-	
+
 	section.section-container{
 	display: flex;
 	position: relative;
@@ -241,6 +253,11 @@
 	width: 100%;
 	margin: 0;
 	}
+
+	.merch{
+		width: 100%;
+		margin: 0;
+		}
 	
 	.screen{
 	background: #ffffff;
